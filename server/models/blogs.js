@@ -1,7 +1,13 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
 
-mongoose.connect(`${process.env.DB_URL}`);
+mongoose.connect(`${process.env.DB_URL}`)
+  .then(() => {
+    console.log("Successfully connected to the database");
+  })
+  .catch((error) => {
+    console.error("Error connecting to the database", error);
+  });
 
 const blogSchema = mongoose.Schema({
   title: {
