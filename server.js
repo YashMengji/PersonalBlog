@@ -39,10 +39,10 @@ app.post("/api/posts", upload.single('image'), async (req, res) => {
     });
     console.log(newBlog)
     await newBlog.save();
-    res.status(201).send(newBlog);
+    return res.status(201).send(newBlog);
   }
   catch(error){
-    res.status(500).json({ error: error.message });
+    return res.status(500).json({ error: error.message });
   }
 });
 
