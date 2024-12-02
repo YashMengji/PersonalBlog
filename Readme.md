@@ -1,4 +1,4 @@
-## Client Setup (Vite + React)
+## Setup instructions
 
 ### Prerequisites
 - Node.js installed (v16 or later)
@@ -45,7 +45,7 @@
 5. **Access the App**
    -  Open the provided local development URL (e.g., http://localhost:3000) in your browser.
 
-## Deployment as a Web Service on Render
+## Deployment process
 
 ### Prerequisites
 - A Render account (sign up at [Render](https://render.com/))
