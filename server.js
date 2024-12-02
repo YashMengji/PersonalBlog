@@ -70,15 +70,15 @@ app.get("/api/posts", async (req, res) => {
   }
 });
 
-app.get("/api/delete", async (req, res) => {
-  try{
-    await Blog.deleteMany({});
-    res.status(200).send('Deleted all blogs');
-  }
-  catch(error){
-    res.status(500).json({ error: error.message });
-  }
-});
+// app.get("/api/delete", async (req, res) => {
+//   try{
+//     await Blog.deleteMany({});
+//     res.status(200).send('Deleted all blogs');
+//   }
+//   catch(error){
+//     res.status(500).json({ error: error.message });
+//   }
+// });
 
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
